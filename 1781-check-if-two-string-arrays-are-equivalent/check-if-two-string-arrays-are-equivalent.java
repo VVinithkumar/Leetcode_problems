@@ -10,13 +10,6 @@ class Solution {
         {
             s1+=word2[i];
         }
-        if(s.equals(s1))
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return s.equals(s1);
     }
 }
