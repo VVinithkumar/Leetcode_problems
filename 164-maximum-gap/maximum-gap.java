@@ -1,9 +1,13 @@
 class Solution {
     public int maximumGap(int[] nums) {
         List<Integer> al=new ArrayList<>();
-        if(nums.length<2)
+        if(nums.length==1)
         {
             return 0;
+        }
+        if(nums.length==2)
+        {
+            return nums[1]-nums[0];
         }
         Arrays.sort(nums);
         int ans=0;
