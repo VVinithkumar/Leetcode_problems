@@ -10,7 +10,7 @@ class Solution {
         int temp=nums[0];
         for(int i=1;i<nums.length;i++)
         {
-            ans=Math.abs(temp-nums[i]);
+            ans=nums[i]-temp;
             al.add(ans);
             temp=nums[i];
         }
